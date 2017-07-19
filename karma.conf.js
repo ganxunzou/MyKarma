@@ -30,15 +30,17 @@ module.exports = function(config) {
     preprocessors: {
       'src/**/*.js':'coverage'
     },
+
     coverageReporter: {
-        type : 'html',
-        dir : 'coverage1/'
+      reporters: [
+        { type: 'lcovonly', dir: 'coverage/' },
+        { type: 'html', dir: 'coverage/' },
+        { type: 'cobertura', dir: 'coverage/' }
+      ]
     },
-
-
-    // test results reporter to use
-    // possible values: 'dots', 'progress'
-    // available reporters: https://npmjs.org/browse/keyword/karma-reporter
+    
+    //https://npmjs.org/browse/keyword/karma-reporter
+    //'coverage','kjhtml' 这两个覆盖率报告
     reporters: ['progress','coverage','kjhtml'],
 
 
@@ -81,6 +83,8 @@ module.exports = function(config) {
   console.log("evn:"+process.env.TRAVIS)
   if(process.env.TRAVIS){
     configuration.browsers = ['Chrome_travis_ci'];
+  }else{
+    configuration.browsers =['Chrome'];
   }
 
   config.set(configuration);
