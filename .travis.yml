@@ -1,0 +1,16 @@
+language: node_js
+
+node_js:
+- '7'
+- '6'
+- '4'
+
+script: npm run karma-start
+
+notifications:
+  email: false
+
+cache: yarn
+
+# after_success:
+# - npm run codecov
