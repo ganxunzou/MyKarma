@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/karma start",
+    "test": "./node_modules/.bin/karma start  --single-run",
     "karma-start": ".\\node_modules\\.bin\\karma start",
     "karma-init": ".\\node_modules\\.bin\\karma init"
   },
