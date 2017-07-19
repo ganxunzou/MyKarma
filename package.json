@@ -7,11 +7,12 @@
     "test": "./node_modules/.bin/karma start  --single-run",
     "karma-start": ".\\node_modules\\.bin\\karma start",
     "karma-init": ".\\node_modules\\.bin\\karma init",
-    "coveralls":" cat ./coverage/*/lcov.info | coveralls"
+    "coveralls": " cat ./coverage/*/lcov.info | coveralls"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "coveralls": "^2.13.1",
     "jasmine-core": "^2.6.4",
     "karma": "^1.7.0",
     "karma-chrome-launcher": "^2.2.0",
