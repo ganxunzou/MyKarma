@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "karma-start": ".\\node_modules\\.bin\\karma.cmd start",
-    "karma-init": ".\\node_modules\\.bin\\karma.cmd init"
+    "test": ".\\node_modules\\.bin\\karma start",
+    "karma-init": ".\\node_modules\\.bin\\karma init"
   },
   "author": "",
   "license": "ISC",
