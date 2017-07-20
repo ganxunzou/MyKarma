@@ -4,7 +4,7 @@ function Add(a ,b )
 }
 
 
-function Add2(a ,b )
+function Add3(a ,b )
 {
     return a+b;
 }
