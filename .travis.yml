@@ -19,6 +19,7 @@ cache: yarn
 
 after_success:
 - ls /home/travis/build/ganxunzou/MyKarma/coverage
+- ls /home/travis/build/ganxunzou/MyKarma/coverage/*/
 - npm run coveralls
 
 
