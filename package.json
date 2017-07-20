@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/karma start  --single-run  && cat ./coverage/lcov.info | coveralls",
-    "karma-start": ".\\node_modules\\.bin\\karma start",
-    "karma-init": ".\\node_modules\\.bin\\karma init",
+    "test": "./node_modules/.bin/karma start  --single-run  && cat ./coverage/*/lcov.info | coveralls",
+    "karma-start": "./node_modules/.bin/karma start",
+    "karma-init": "./node_modules/.bin/karma init",
     "coveralls": " cat ./coverage/*/lcov.info | coveralls"
   },
   "author": "",
