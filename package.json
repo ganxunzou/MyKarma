@@ -1,6 +1,6 @@
 {
   "name": "mykarma",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "coveralls": " cat ./coverage/*/lcov.info | coveralls"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "coveralls": "^2.13.1",
     "jasmine-core": "^2.6.4",
